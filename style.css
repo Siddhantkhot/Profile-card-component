@@ -1,0 +1,106 @@
+
+*,*::before,*::after{
+    margin: 0;
+    padding:0;
+}
+html{
+    font-family:'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+body{
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image:url(./images/bg-pattern-top.svg),url(./images/bg-pattern-bottom.svg);
+    background-repeat:no-repeat;
+    background-position:left -40rem top -30rem,right -40rem top 20rem;
+    
+}
+main{
+    background-color:white;
+    border-radius: 15px;
+    overflow: hidden;
+    margin:1rem;
+    text-align: center;
+    animation: introLoad 1.7s forwards;
+}
+
+.crest{
+    margin-top: -3rem;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+h1{
+    font-size: 18px;
+    text-align: center;
+    margin: 15px;
+    color: hsl(229, 23%, 23%);
+}
+span{
+    color:hsl(0, 0%, 59%);
+}
+.london{
+    text-align: center;
+    margin-bottom: 30px;
+    color: hsl(0, 0%, 59%);
+   
+}
+section{
+    border-top: hsl(0, 0%, 59%) 0.01px solid;
+    display: flex;
+    justify-content:space-evenly;
+}
+h2{
+    font-size: 1rem;
+    color: hsl(229, 23%, 23%); 
+   margin-top: 1rem;
+
+}
+section p{
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    color:hsl(0, 0%, 59%) ;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 375px){
+    body{
+        background-position:left -42rem top -30rem,right -40rem top 20rem;   
+    }
+}
+@media only screen and (min-width: 500px) {
+    body{
+        background-position:left -39rem top -30rem,right -37rem top 20rem;   
+    }
+}
+@media only screen and (min-width: 680px){
+    body{
+        background-position:left -36rem top -30rem,right -32rem top 20rem;   
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    body{
+        background-position:left -32rem top -30rem,right -25rem top 20rem;   
+    }
+}
+@media only screen and (min-width: 1440px){
+    body{
+        background-position:left -16rem top -25rem,right -15rem top 20rem;   
+    }
+}
+
+@keyframes introLoad{
+    0%{
+        transform: translateY(-40rem);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
